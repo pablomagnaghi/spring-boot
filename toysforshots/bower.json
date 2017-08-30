@@ -1,0 +1,20 @@
+{
+  "name": "bower-demo",
+  "homepage": "https://github.com/pablomagnaghi/springBoot",
+  "authors": [
+    "Pablo Magnaghi <pmagnaghi@solstice.com>"
+  ],
+  "description": "bower demo app",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.1.4"
+  }
+}
