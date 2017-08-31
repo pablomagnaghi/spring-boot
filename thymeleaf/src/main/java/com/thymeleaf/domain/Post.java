@@ -1,4 +1,4 @@
-package com.toysforshots.domain;
+package com.thymeleaf.domain;
 
 import java.util.Date;
 

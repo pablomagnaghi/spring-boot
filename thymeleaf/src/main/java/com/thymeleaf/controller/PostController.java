@@ -1,6 +1,6 @@
-package com.toysforshots.controller;
+package com.thymeleaf.controller;
 
-import com.toysforshots.domain.Post;
+import com.thymeleaf.domain.Post;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
