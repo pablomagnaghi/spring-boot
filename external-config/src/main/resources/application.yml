@@ -1,0 +1,4 @@
+pageController.foo: "foo"
+pageController.bar: "bar"
+
+my.secret: ${random.value}
