@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>errors</name>
-	<description>Error Handling Demo</description>
+	<description>Errors and Handling Exceptions Demo</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
