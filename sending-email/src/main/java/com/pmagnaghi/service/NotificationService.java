@@ -18,11 +18,11 @@ public class NotificationService {
 		this.javaMailSender = javaMailSender;
 	}
 	
-	public void sendNotificaitoin(User user) throws MailException {
+	public void sendNotification(User user) throws MailException {
 		// send email
 		SimpleMailMessage mail = new SimpleMailMessage();
 		mail.setTo(user.getEmailAddress());
-		mail.setFrom("danvega@gmail.com");
+		mail.setFrom("pablomagnaghi@gmail.com");
 		mail.setSubject("Toys for Shots is coming soon!");
 		mail.setText("This is a cool email notificaiton");
 		

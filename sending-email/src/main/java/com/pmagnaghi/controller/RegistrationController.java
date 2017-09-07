@@ -34,7 +34,7 @@ public class RegistrationController {
 		
 		// send a notification
 		try {
-			notificationService.sendNotificaitoin(user);
+			notificationService.sendNotification(user);
 		}catch( MailException e ){
 			// catch error
 			logger.info("Error Sending Email: " + e.getMessage());
