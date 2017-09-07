@@ -1,9 +1,12 @@
 package com.pmagnaghi.controller.admin;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -47,8 +50,16 @@ public class AdminPostController {
 	}
 	
 	@RequestMapping( value = "/admin/post/save", method = RequestMethod.POST )
-	public String save(Post post) {
-		Post savedPost = postService.save(post);
-		return "redirect:/admin/post/" + savedPost.getId();
+	public String save(@Valid Post post, BindingResult bindingResult, Model model) {
+		
+		if( bindingResult.hasErrors() ) {
+			model.addAttribute("authors", authorService.list());
+			return "admin/post/postForm";
+		} else {
+			Post savedPost = postService.save(post);
+			return "redirect:/admin/post/" + savedPost.getId();
+		}
+		
 	}
+	
 }
