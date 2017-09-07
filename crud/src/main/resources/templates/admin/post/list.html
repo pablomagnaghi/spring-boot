@@ -19,6 +19,7 @@
 					<th>Slug</th>
 					<th>Author</th>
 					<th>View</th>
+					<th>Edit</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -28,6 +29,7 @@
 					<td th:text="${post.slug}">slug</td>
 					<td th:text="${post.author.firstName + ' ' + post.author.lastName}">author</td>
 					<td><a href="#" th:href="@{/admin/post/} + ${post.id}">View</a></td>
+					<td><a href="#" th:href="@{/admin/post/edit/} + ${post.id}">Edit</a></td>
 				</tr>
 			</tbody>
 		</table>
