@@ -28,9 +28,9 @@ public class RegistrationController {
 		
 		// create user 
 		User user = new User();
-		user.setFirstName("Dan");
-		user.setLastName("Vega");
-		user.setEmailAddress("dan@clecares.org");
+		user.setFirstName("Pablo");
+		user.setLastName("Magnaghi");
+		user.setEmailAddress("pablomagnaghi@gmail.com");
 		
 		// send a notification
 		try {
