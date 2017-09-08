@@ -1,2 +1,2 @@
 # springBoot
-$ spring run HelloWorld.groovy
+_ $ spring run HelloWorld.groovy
